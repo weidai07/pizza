@@ -8,11 +8,11 @@ Account.prototype.cost = function(toppings, size) {
   return this.totalAmt += this.toppings + this.size;
 }
 
-Account.prototype.total = function(toppings, size){
-  this.totalAmt += deposit;
-  this.totalAmt -= withdraw;
-  return this.totalAmt;
-}
+// Account.prototype.total = function(toppings, size){
+//   this.totalAmt += toppings;
+//   this.totalAmt += size;
+//   return this.totalAmt;
+// }
 
 
 
@@ -21,6 +21,7 @@ $(document).ready(function(){
   $("form#form1").submit(function(event){
     event.preventDefault();
 
+      var userInput = new Pizza (toppings, size)
   });
 });
 
