@@ -8,17 +8,55 @@
     <title>Pizza</title>
   </head>
   <body>
-    <div class="container">
-      <form id="form1">
-        <h1>Pizza</h1>
-        <div class="form-group">
-          <input type="text" id="primeBox" class="form-control">
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Pizza Shop</h1>
         </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-    </div>
-    <div id="resultBox">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <form id="formOne">
+                  <h5 class="card-title">Toppings</h5><br>
+                  <!-- <label for="name">Enter name here:</label>
+                  <input type="text" id="name"><br>
+                  <label for="first-deposit">Initial Deposit:</label>
+                  <input type="number" id="first-deposit" value="0.00"><br> -->
+                  <button type="submit" name="button"class="btn btn-light btn-sm">Place Toppings</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card">
+                <div class="card-body">
+                  <form id="formTwo">
+                    <h5 class="card-title">Size</h5><br>
+                    <!-- <label for="deposit">Deposit Amount:</label>
+                    <input type="number" id="deposit" value="0.00"><br>
+                    <label for="withdrawal">withdrawal Amount:</label>
+                    <input type="number" id="withdrawal" value="0.00"><br> -->
+                    <button type="submit" name="button" class="btn btn-light btn-sm">Place Size</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                  <h5 class="card-title">Total Cost:</h5>
+                  <h6>$ <span class="total1"></span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </div>
-  </body>
+      </div>
+    </body>
 </html>
