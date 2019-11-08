@@ -1,12 +1,24 @@
 function Pizza (toppings, size){
-  this.toppings = toppings,
-  this.size = size,
-  this.totalAmt=0
+  this.toppings = toppings;
+  this.size = size;
 }
 
-Account.prototype.cost = function(toppings, size) {
-  return this.totalAmt += this.toppings + this.size;
+Pizza.prototype.cost = function(toppings, size) {
+  var price = 0
+  if (this.toppings === "meat" && this.size === "small") {
+    return price = 7;
+  } else if (this.toppings === "meat" && this.size === "large"){
+    return price = 8;
+  } else if (this.toppings === "noMeat" && this.size === "small"){
+    return price = 3;
+  } else if (this.toppings === "noMeat" && this.size === "large"){
+    return price = 4;
+  } else {
+    return false;
+  }
 }
+  // return this.totalAmt += this.toppings + this.size;
+
 
 // Account.prototype.total = function(toppings, size){
 //   this.totalAmt += toppings;
@@ -18,17 +30,31 @@ Account.prototype.cost = function(toppings, size) {
 
 
 $(document).ready(function(){
-  $("form#form1").submit(function(event){
+  $("form#formOne").submit(function(event){
     event.preventDefault();
 
-      var userInput = new Pizza (toppings, size)
+      var inputToppings = $("input:radio[name=toppings]:checked").val();
+      var inputSize = $("input:radio[name=size]:checked").val();
+      var userInput = new Pizza (inputToppings, inputSize);
+      var result = userInput.cost;
+
+      $(".total1").text(result).show();
+  // $("form#formTwo").submit(function(event){
+  //   event.preventDefault();
+
   });
 });
 
+// this.totalAmt=0
 
-
-
-
+//     var inputMovie = $("#movieID").val();
+//     var inputTime = $("#timeID").val();
+//     var inputAge = $("input:radio[name=age]:checked").val();
+//
+//     var theater = new Theater(inputMovie,inputTime,inputAge);
+//       var result = "Your price is $"+theater.priceCalc()+".00";
+//
+// $("#resultBox").text(result).show();
 
 // $(document).ready(function() {
 //   var person1;
