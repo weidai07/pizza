@@ -19,15 +19,15 @@ Pizza.prototype.cost = function() {
 }
 
 
-$(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    event.preventDefault();
-
-      var inputToppings = $("input:radio[name=toppings1]:checked").val();
-      var inputSize = $("input:radio[name=size1]:checked").val();
-      var userInput = new Pizza (inputToppings, inputSize);
-      var result = userInput.cost();
-
-      $(".total1").text(result).show();
-  });
-});
+// $(document).ready(function() {
+//   $("form#formOne").submit(function(event) {
+//     event.preventDefault();
+//
+//       var inputToppings = $("input:radio[name=toppings1]:checked").val();
+//       var inputSize = $("input:radio[name=size1]:checked").val();
+//       var userInput = new Pizza (inputToppings, inputSize);
+//       var result = userInput.cost();
+//
+//       $(".total1").text(result).show();
+//   });
+// });
