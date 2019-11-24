@@ -4,9 +4,11 @@
 
 ## Description
 
-Order pizza through this website.
+This website is a finalized product of my project. It allows users to order pizza and select the size of the pizza they desire.
 
 ## Setup
+
+To utilize this portfolio, visit https://github.com/weidai07/pizza and download the master branch. Open the index.html file in any web browser and proceed with the following instructions:
 
 * _Select a Topping_
 
@@ -15,10 +17,16 @@ Order pizza through this website.
 * _Place Order_
 
 ### Specification
+
+This programs allows users to select a pizza of their choice, given the variations that are available. If a user selects a small sized meat topping pizza, their output total will be $7.00. If a use selects the same pizza in a large size, their output total will be $8.00. However, if the user does not like meat on their pizza, then they will have the option of selecting a vegetarian pizza of $3.00 on small size and $4.00 on large size.
+
 | Input | Output |
 | :-------------     | :------------- | :------------- |
 | Select a Topping | Price |
-| Select a Size | Price |
+| Meats (S)| $7.00 |
+| Meats (L) | $8.00 |
+| Vegetarian (S) | $3.00 |
+| Vegetarian (L) | $4.00 |
 
 ## Known Bugs
 
